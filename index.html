@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -15,99 +15,112 @@
 </head>
 <body class="body">
     <header class="header">
+        <div class="container container-header">
         <a class="logo" href="">
             <span class="web">web</span><span class="studio-header">studio</span>
         </a>
       
 <nav>
 <ul class="menu-nav list">
-    <li> <a class="nav-link" href="./index.html">Studio</a></li>
-    <li> <a class="nav-link" href="./portfolio.html">Portfolio</a></li>
-    <li> <a class="nav-link" href="">Contacts</a></li>
+    <li class="item"> <a class="nav-link" href="./index.html">Studio</a></li>
+    <li class="item"> <a class="nav-link" href="./portfolio.html">Portfolio</a></li>
+    <li class="item"> <a class="nav-link" href="">Contacts</a></li>
 </ul>
 </nav>
 
 
 <ul class="contact list">
-    <li><a class="contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-    <li><a class="contact-link" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a></li>
+    <li class="item"><a class="contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+    <li class="item"><a class="contact-link" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a></li>
 </ul>
-
+</div>
     </header>
     <main>
-<section class="solution">
-    <h1 class="solution-head">  Effective Solutions for Your Business </h1>
+<section class= "hero">
+    <div class="container">
+    <h1 class="hero-head">  Effective Solutions for Your Business </h1>
     <button class="button-service button" type="button">Order Service</button>
+    </div>
 </section>
-<section>
+<section class="section">
+    <div class="container"> 
     <h2 class="visually-hidden">Our Advantages</h2>
-    <ul class="list">
-<li>
+    <ul class="list list-adv">
+<li class="item ">
     <h3>Strategy</h3>
-    <p>Our goal is to identify the business
+    <p class="text-advant">Our goal is to identify the business
     problem to walk away with the perfect and creative solution.</p>
 </li>
-<li>
+<li class="item advant">
     <h3>Punctuality</h3>
-    <p>Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
+    <p class="text-advant">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
 </li>
-<li>
+<li class="item advant">
     <h3>Diligence</h3>
-    <p>Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
+    <p class="text-advant">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
 </li>
-<li>
+<li class="item advant">
     <h3>Technologies</h3>
-    <p>Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
+    <p class="text-advant">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
 </li>
     </ul>
+    </div>
 </section>
-<section>
-    <h2>What are we doing</h2>
-    <ul class="list">
-      <li>
+<section class="section">
+    <div class="container ">
+    <h2 >What are we doing</h2>
+    <ul class="list list-adv">
+      <li class="item">
         <img src="images/mac.jpg" alt="mac"
             width="360" />
 
       </li>
-      <li>
+      <li class="item">
         <img src="images/apps.jpg" alt="Apps" width="360" />
       </li>
-      <li>
+      <li class="item">
         <img src="images/mobile.jpg" alt="mobile" width="360" />
       </li>
     </ul>
+    </div>
 </section>
-<section class="our-team">
-    <h2>Our Team</h2>
-    <ul class="list">
-        <li class="team">
+<section class="our-team section">
+    <div class="container">
+    <h2 class="head-team">Our Team</h2>
+    <ul class="list list-adv">
+        <li class="team item">
             <img src="images/mark.jpg" alt="Mark Guerrero" width="264" />
-            <h3>Mark Guerrero</h3>
-            <p>Product Designer</p>
+            <h3 class="card-title">Mark Guerrero</h3>
+            <p class="card-text">Product Designer</p>
         </li>
-        <li class="team">
+        <li class="team item">
             <img src="images/tom.jpg" alt="Tom Ford" width="264" />
-            <h3>Tom Ford</h3>
-            <p>Frontend Developer</p>
+            <h3 class="card-title">Tom Ford</h3>
+            <p class="card-text">Frontend Developer</p>
         </li>
-        <li class="team">
+        <li class="team item">
             <img src="images/camila.jpg" alt="Camila Garcia" width="264" />
-            <h3>Camila Garcia</h3>
-            <p>Marketing</p>
+            <h3 class="card-title">Camila Garcia</h3>
+            <p class="card-text">Marketing</p>
         </li>
-        <li class="team">
+        <li class="team item">
             <img src="images/daniel.jpg" alt="Daniel Wilson" width="264" />
-            <h3>Daniel Wilson</h3>
-            <p>UI Designer</p>
+            <h3 class="card-title">Daniel Wilson</h3>
+            <p class="card-text">UI Designer</p>
         </li>
     </ul>
+    </div>
 </section>
     </main>
+    
     <footer class="footer">
-        <a href="">
-            <span class="web">web</span><span class="studio-footer">studio</span>
-        </a>
-       <p class="text-footer"> Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p> 
+        <div class="container">
+        <a class="footer-logo" href="">
+        <span class="web">web</span><span class="studio-footer">studio</span>
+    </a>
+    <p class="text-footer"> Increase the flow of customers and sales for your business with digital marketing & growth
+        solutions.</p>
     </footer>
+    </div>
 </body>
 </html>
