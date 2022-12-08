@@ -25,6 +25,14 @@ img {
     height: auto;
 }
 
+/* Header*/
+
+.header {
+    padding-top: 24px;
+        padding-bottom: 24px;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
 .contact .contact-link {
     color: var(--dark);
     font-size: 16px;
@@ -37,6 +45,7 @@ img {
 
 .contact {
     display: flex;
+    margin-left: auto;
 }
 
 
@@ -88,34 +97,25 @@ img {
 
 .container-header {
     display: flex;
-    margin-top: 24px;
-    margin-bottom: 24px;
 }
 
-.logo {
-   margin-right: 77px;
-   margin-left: 156px;
-}
 
 .menu-nav {
     display: flex;
+    margin-left: 77px;
 }
 
 
 .menu-nav .item {
     margin-right: 40px;
 }
-.menu-nav .item:last-child {
-    margin-right: 331px;
-}
+
 
 .contact .item {
     margin-right: 40px;
 }
 
-.contact .item:last-child {
-    margin-right: 156px;
-}
+
 
 
 .menu-nav .nav-link {
@@ -134,11 +134,15 @@ img {
     color: var(--primary-brand)
  }
 
+/* Hero */
 
 .hero {
 background-color: var(--dark);
 text-align: center;
     height: 603px;
+    display: block;
+    padding-top: 192px;
+    padding-bottom: 192px;
 }
 
 .hero-head {
@@ -147,21 +151,24 @@ text-align: center;
         line-height: 1.07;
         max-width: 492px;
         color: #FFFFFF;
-        margin: auto;
-        padding-top: 192px;
-        padding-bottom: 48px;
+       margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
 }
 
 .list-adv {
     display: flex;
-    margin-left: 156px;
-    margin-right: 156px; 
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .list-adv .item {
-    margin-right: 24px;
+    max-width: 264px;
 }
 
+.list-adv .item:not(:first-child) {
+   margin-left: 24px;
+}
 
 .button {
     cursor: pointer;
@@ -177,7 +184,7 @@ text-align: center;
         letter-spacing: 0.04em;
         color: var(--primary-brand);
         border-radius: 4px; 
-        padding: 8px 16px;
+        padding: 12px 24px;
         min-width: 69px;
         text-align: center;
         border: 1px solid #E7E9FC;
@@ -188,7 +195,7 @@ background-color: var(--primary-brand);
 color: #FFFFFF;
 }
 
-.button-service {
+.button-hero {
    padding: 16px 32px;
     background: var(--primary-brand);
     color: #FFFFFF;
@@ -202,23 +209,29 @@ color: #FFFFFF;
     
 }
 
-.button-service:hover, 
-.button-service:focus {
+.button-hero:hover, 
+.button-hero:focus {
 background: #404BBF;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.button-service:active {
+.button-hero:active {
     background: #404BBF;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-h3 {
+.adv-title {
     font-weight: 600;
         font-size: 20px;
-        line-height: 24px;
+        line-height: 1.2;
         color: var(--dark);
 
+}
+
+.text-advant {
+    font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
 }
 
 h2 {
@@ -245,6 +258,9 @@ font-weight: 600;
         color: var(--accent);
         max-width: 264px;
         margin-top: 16px;
+        font-weight: 400;
+            font-size: 16px;
+            line-height: 1.5;
 }
 
 a[href] {
@@ -273,7 +289,7 @@ ul {
 }
 
 .container {
-  width: 1158;
+  width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -285,9 +301,6 @@ ul {
     padding-bottom: 120px;
 }
 
-.text-advant {
-    max-width: 264px;
-}
 
 .list-portfolio {
     display: flex;
